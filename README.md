@@ -17,5 +17,6 @@ Neste projeto vou utilizar.
 * `SASS`
 * `JavaScript`
 * `ReactJs`
+* `Vite`
 
 #### Projeto em construção!!
