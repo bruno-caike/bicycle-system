@@ -1,12 +1,12 @@
-import Nav from "./nav";
+import Nav from "./Nav";
+import { BaseStyled } from "./style";
 
 const Base = () => {
     return (
-        <div>
+        <BaseStyled>
             <Nav />
             <div>
                 <header>
-
                 </header>
                 <main>
                     
@@ -15,7 +15,7 @@ const Base = () => {
 
                 </footer>
             </div>
-        </div>
+        </BaseStyled>
     )
   }
   

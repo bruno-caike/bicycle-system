@@ -4,6 +4,7 @@ export const colors = {
     neutral_100: '#2d2d2a',
     neutral_200: '#353831',
     neutral_300: '#38423b',
+    white: '#FFFFFF',
 }
 
 export const routes = {

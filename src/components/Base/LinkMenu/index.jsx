@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { LinkAncora } from "./style";
 const LinkMenu = ({ icon, text, url }) => {
     return (
-        <a href={url}>
+        <LinkAncora to={url}>
             <FontAwesomeIcon icon={icon} />
             <span>{text}</span>
-        </a>
+        </LinkAncora>
     );
 }
 export default LinkMenu;

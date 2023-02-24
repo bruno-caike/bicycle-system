@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { colors } from '../../utils/variables';
 
 const GlobalStyle = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -34,11 +35,17 @@ const GlobalStyle = createGlobalStyle`
   html {
       overflow-y: scroll;
       scroll-behavior: smooth;
-      font-size: 100%;
-      p {
-        color:red;
-      }
+      font-size: 62.5%;
   }
   * {box-sizing: border-box;}
+  body {
+    color: ${colors.neutral_100};
+    background-color: ${colors.white};
+    padding: 0 !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
 `;
 export default GlobalStyle;

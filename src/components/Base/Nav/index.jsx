@@ -10,6 +10,8 @@ import { generateRandom } from "../../../utils/functions"
 
 import ImgLogo from '../../../assets/img/logo-bicycle-system.svg'
 
+import { LogosNav, MinifyNav, NavStyle } from "./style"
+
 const links = [
     {icon: faUserGroup, text: "Pessoas", url: "#"},
     {icon: faStore, text: "Produtos", url: "#"},
@@ -20,10 +22,10 @@ const links = [
 
 const Nav = () => {
     return (
-        <nav>
-            <div>
+        <NavStyle>
+            <LogosNav>
                 <Link to={routes.dashboard}><img src={ImgLogo} alt="Logo System" /></Link>
-            </div>
+            </LogosNav>
             <ul>
                 {links.map(({ icon, text, url }) => {
                     return (
@@ -33,12 +35,12 @@ const Nav = () => {
                     );
                 })}
             </ul>
-            <div>
+            <MinifyNav>
                 <button type="button">
                     <FontAwesomeIcon icon={faAngleLeft} />
                 </button>
-            </div>
-        </nav>
+            </MinifyNav>
+        </NavStyle>
     );
 }
 export default Nav;
