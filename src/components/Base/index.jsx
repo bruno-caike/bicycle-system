@@ -1,3 +1,4 @@
+import Header from "./Header";
 import Nav from "./Nav";
 import { BaseStyled } from "./style";
 
@@ -6,8 +7,7 @@ const Base = () => {
         <BaseStyled>
             <Nav />
             <div>
-                <header>
-                </header>
+                <Header />
                 <main>
                     
                 </main>
