@@ -4,7 +4,7 @@ import { colors } from "../../../utils/variables";
 export const NavStyle = styled.nav`
     background-color: ${colors.neutral_200};
     display: grid;
-    grid-template-rows: 7rem 11fr 5rem;
+    grid-template-rows: 7rem 1fr 5rem;
 `;
 
 export const LogosNav = styled.div`
