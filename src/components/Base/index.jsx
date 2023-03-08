@@ -2,7 +2,7 @@ import Nav from "./Nav";
 import Header from "./Header";
 import Footer from "./Footer";
 
-import { BaseStyled, MainStyled } from "./style";
+import { BaseStyled, Main, MainStyled } from "./style";
 
 const Base = () => {
     return (
@@ -10,9 +10,11 @@ const Base = () => {
             <Nav />
             <MainStyled>
                 <Header />
-                <main>
-                    
-                </main>
+                <Main>
+                    <div>
+                        
+                    </div>
+                </Main>
                 <Footer />
             </MainStyled>
         </BaseStyled>
