@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 import { BaseStyled, Main, MainStyled } from "./style";
 
-const Base = () => {
+const Base = ({ children }) => {
     return (
         <BaseStyled>
             <Nav />
@@ -12,7 +12,7 @@ const Base = () => {
                 <Header />
                 <Main>
                     <div>
-                        
+                        {children}
                     </div>
                 </Main>
                 <Footer />
