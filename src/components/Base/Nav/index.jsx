@@ -9,6 +9,7 @@ import { routes } from "../../../utils/variables"
 import { generateRandom } from "../../../utils/functions"
 
 import ImgLogo from '../../../assets/img/logo-bicycle-system.svg'
+import ImgLogoMini from '../../../assets/img/logo-bicycle-system-mini.svg'
 
 import { LogosNav, MinifyNav, NavStyle } from "./style"
 
@@ -20,9 +21,9 @@ const links = [
     {icon: faUser, text: "Usuários", url: "#"},
 ];
 
-const Nav = () => {
+const Nav = ({ closeMenu }) => {
     return (
-        <NavStyle>
+        <NavStyle closeMenu={closeMenu}>
             <LogosNav>
                 <Link to={routes.dashboard}><img src={ImgLogo} alt="Logo System" /></Link>
             </LogosNav>
@@ -35,11 +36,6 @@ const Nav = () => {
                     );
                 })}
             </ul>
-            <MinifyNav>
-                <button type="button">
-                    <FontAwesomeIcon icon={faAngleLeft} />
-                </button>
-            </MinifyNav>
         </NavStyle>
     );
 }

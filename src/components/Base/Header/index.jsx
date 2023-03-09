@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import { routes } from "../../../utils/variables";
 import { HeaderStyled, NavStyled, ProfileStyled } from "./style";
 
-const Header = () => {
+const Header = ({ setCloseMenu }) => {
+    const handleClickBtnCloseNav = () => setCloseMenu(close => !close);
     return (
         <HeaderStyled>
             <NavStyled>
-                <button type="button"><FontAwesomeIcon icon={faBars} /></button>
+                <button type="button" onClick={handleClickBtnCloseNav} title="Fechar menu"><FontAwesomeIcon icon={faBars} /></button>
                 <ul>
                     <li><Link to={routes.home}><FontAwesomeIcon icon={faHouse} /></Link></li>
                     <li>/ dashboard</li>

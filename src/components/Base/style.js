@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { colors } from "../../utils/variables";
 
 export const BaseStyled = styled.div`
-    display: grid;
-    grid-template-columns: 30rem 1fr;
+    display: flex;
     min-height: 100vh;
 `;
 
 export const MainStyled = styled.div`
+    width: 100%;
     display: grid;
     grid-template-rows: 7rem 1fr 5rem;
 `;

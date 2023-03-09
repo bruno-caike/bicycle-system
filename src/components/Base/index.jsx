@@ -3,13 +3,15 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import { BaseStyled, Main, MainStyled } from "./style";
+import { useState } from "react";
 
 const Base = ({ children }) => {
+    const [closeMenu, setCloseMenu] = useState(false);
     return (
         <BaseStyled>
-            <Nav />
+            <Nav closeMenu={closeMenu} />
             <MainStyled>
-                <Header />
+                <Header setCloseMenu={setCloseMenu} />
                 <Main>
                     <div>
                         {children}
